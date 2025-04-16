@@ -1,5 +1,5 @@
-body {
-  background-color: white;
+#main {
+  background-color: #f8f8f8;
 }
 
 #intro {
@@ -8,4 +8,8 @@ body {
 
 #randomPics {
   background-color: #d5d6ea;
+}
+
+#darkMode {
+  color: #999;
 }
