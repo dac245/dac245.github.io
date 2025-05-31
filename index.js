@@ -1,5 +1,16 @@
 window.onload=function(){
   document.getElementById('backgroundMode').addEventListener('change', modeChange, false);
+  mapInfo();
+}
+
+function mapInfo() {
+  maptilersdk.config.apiKey = config.MAPTILER_API_KEY;
+  const map = new maptilersdk.Map({
+    container: 'map', // container's id or the HTML element to render the map
+    style: maptilersdk.MapStyle.OUTDOOR,
+    center: [-73.935242, 40.730610], // starting position [lng, lat]
+    zoom: 9, // starting zoom
+  });
 }
 
 function modeChange() {

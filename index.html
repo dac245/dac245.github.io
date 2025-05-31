@@ -10,7 +10,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3625970864806869" crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3625970864806869" crossorigin="anonymous"></script> -->
+    <!-- Maps -->
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v3.2.0/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v3.2.0/maptiler-sdk.css" rel="stylesheet" />
   </head>
   <body>
     <div id="main" class="uk-grid-collapse uk-child-width-expand" uk-grid>
@@ -24,7 +27,7 @@
             <li class="uk-nav-divider"></li>
             <li class=""><a href="#randomPics">Random Pics</a></li>
             <li class="uk-nav-divider"></li>
-            <li class=""><a href="#">About You</a></li>
+            <li class=""><a href="#mapSection">Map</a></li>
             <li class="uk-nav-divider"></li>
           </ul>
           <div id="darkMode"><input id="backgroundMode" type="checkbox" name="backgroundMode" />Dark Mode</div>
@@ -85,13 +88,20 @@
               </div>      
           </div>
         </div>
+        <div id="mapSection" class="uk-section uk-section-muted">
+          <div class="uk-container uk-text-large">
+              <h1 class="uk-heading-medium uk-heading-divider uk-animation-slide-left">Map</h1>
+              <div id="map" class="uk-grid-match" uk-grid></div>      
+          </div>
+        </div>
       </div>
     </div>
-
 
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/js/uikit-icons.min.js"></script>
+  <!-- Env Variables -->
+  <script src="config.js"></script>
   <!-- Custom JS -->
 	<script src="index.js"></script>
   </body>

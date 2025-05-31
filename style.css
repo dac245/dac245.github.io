@@ -10,6 +10,10 @@
   background-color: #d5d6ea;
 }
 
+#map {
+  padding: 35%;
+}
+
 #darkMode {
   color: #999;
 }
