@@ -21,10 +21,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  map_key: ${{ secrets.MAPTILER_API_KEY }}
-
-
 jobs:
   # Build job
   build:
@@ -32,10 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: create config
-        run: |
-          echo "const config = {MAPTILER_API_KEY: $map_key};" > test.js
 
       - name: Setup Pages
         id: pages
